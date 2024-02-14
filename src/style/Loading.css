@@ -1,0 +1,29 @@
+.loader-container {
+    width: 30vw;
+    height: 35vh;
+    margin: auto;
+    background: rgba(219, 219, 219, 0.834);
+    z-index: 1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 10px solid;
+    border-color: rgb(153 27 27) transparent rgb(153 27 27) transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.5s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
