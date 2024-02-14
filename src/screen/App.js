@@ -40,7 +40,7 @@ function App() {
       <input type="text" name="food" id ="food" autoComplete='no' value={search} onChange={(e) => setSearch(e.target.value)} className='rounded-md mb-3 mr-5 border-2 p-2 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 w-64' />
       <button onClick={clearSearch} className='rounded-md bg-red-800 px-2 h-9 mt-1 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Clear</button>
       </section>
-    </form>
+    </form> 
     {isLoading ? (
         <div className="loader-container">
             <div className="spinner"></div>
