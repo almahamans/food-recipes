@@ -6,5 +6,5 @@ The application is easy to use and responsive to any screen size perfectly.
 + React js: to build the structure.
 + React hooks: to fetch data from API and deal with user input.
 + Tailwind Css: to give website style.
-+ Edamam API: used to git the recipes data.
++ [Edamam API](https://developer.edamam.com/edamam-docs-recipe-api): used to git the recipes data.
 + Css: to make waiting sgin animation while waiting.
