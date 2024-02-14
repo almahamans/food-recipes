@@ -2,6 +2,7 @@ import '../style/App.css';
 import { useEffect, useState } from 'react';
 import Recipe from './recipe';
 import '../style/Loading.css'
+import Footer from './Footer';
 
 function App() {
   const APP_ID = `4b719caf`; 
@@ -33,8 +34,8 @@ function App() {
   }
   
   return(
-  <div className="bg-white">
-    <form  className='flex flex-col mb-3 justify-center items-center'>
+  <div className="bg-white h-auto mb-[30%]">
+    <form  className='flex flex-col justify-center items-center relative'>
       <label htmlFor="food" className='mt-9 mb-4 font-lobester text-red-800 text-2xl sm:text-md'>Type a food name or one ingredient:</label>
       <section className='flex flex-row'>    
       <input type="text" name="food" id ="food" autoComplete='no' value={search} onChange={(e) => setSearch(e.target.value)} className='rounded-md mb-3 mr-5 border-2 p-2 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 w-64' />
@@ -46,7 +47,7 @@ function App() {
             <div className="spinner"></div>
         </div>
       ) :
-    (<section className='flex flex-row flex-wrap m-auto w-auto justify-around'>       
+    (<section className='flex flex-row flex-wrap  w-auto justify-around'>       
       {
         recipes.map(rec => (
           <Recipe 
@@ -62,7 +63,6 @@ function App() {
 }
   </div>
   )
-  
 }
 
 export default App;

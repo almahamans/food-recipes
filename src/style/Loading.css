@@ -1,13 +1,15 @@
 .loader-container {
     width: 30vw;
     height: 35vh;
-    margin: auto;
+    /* margin: auto; */
     background: rgba(219, 219, 219, 0.834);
-    z-index: 1;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 28rem;
+    top:10rem;
+    position: fixed;
 }
 
 .spinner {
