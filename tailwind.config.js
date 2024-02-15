@@ -8,6 +8,11 @@ module.exports = {
     fontFamily: {
       'lobester': ['Lobster', 'cursive'],
       'sans': ['Helvetica', 'Arial', 'sans-serif']
+    },
+    screens: {
+      'lg': {'min':'852px','max': '1444px'},
+      'md': {'min':'641px','max': '850px'},
+      'sm': {'min':'440px','max': '639px'}
     }
   },
   plugins: [],

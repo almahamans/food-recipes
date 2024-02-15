@@ -1,68 +1,31 @@
-import '../style/App.css';
-import { useEffect, useState } from 'react';
-import Recipe from './recipe';
-import '../style/Loading.css'
-import Footer from './Footer';
+import {BrowserRouter, Route, Routes, Link, NavLink} from 'react-router-dom';
+import About from './About';
+import Search from './Search';
+import Home from './Home'
 
-function App() {
-  const APP_ID = `4b719caf`; 
-  const APP_KEY = `0687a6cf19f348c68f124a37555b5fa4	`;
-   
-  const [recipes, setRecipes] = useState([])
-  const [search, setSearch] = useState('')
-  const [isLoading, setLoading] = useState(false)
-
-
-//edamam API
-  useEffect(() => {
-    setLoading(true)
-    const debounce = setTimeout(() => {
-    fetch(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`)
-    .then(response => response.json())
-    .then(data => {
-      setLoading(false)
-      setRecipes(data.hits)
-    })
-    }, 800)
-    
-    return () => clearTimeout(debounce)
-  }, [search])
-
-
-  const clearSearch = () => {
-    setSearch('')
-  }
-  
-  return(
-  <div className="bg-white h-auto mb-[30%]">
-    <form  className='flex flex-col justify-center items-center relative'>
-      <label htmlFor="food" className='mt-9 mb-4 font-lobester text-red-800 text-2xl sm:text-md'>Type a food name or one ingredient:</label>
-      <section className='flex flex-row'>    
-      <input type="text" name="food" id ="food" autoComplete='no' value={search} onChange={(e) => setSearch(e.target.value)} className='rounded-md mb-3 mr-5 border-2 p-2 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 w-64' />
-      <button onClick={clearSearch} className='rounded-md bg-red-800 px-2 h-9 mt-1 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Clear</button>
-      </section>
-    </form> 
-    {isLoading ? (
-        <div className="loader-container">
-            <div className="spinner"></div>
-        </div>
-      ) :
-    (<section className='flex flex-row flex-wrap  w-auto justify-around'>       
-      {
-        recipes.map(rec => (
-          <Recipe 
-          key={rec.recipe.label}
-          title={rec.recipe.label}
-          cal={rec.recipe.calories}
-          img={rec.recipe.image}
-          ingredients={rec.recipe.ingredients} 
-           />
-        ))
-        }
-    </section>)
-}
-  </div>
-  )
+function App(){
+return(
+    <section className='h-auto md:mb-[50%] sm:mb-[70%] lg:mb-[28%]'>
+    <BrowserRouter>
+    <main>
+    <nav className='ml-9 my-5 font-bold text-md flex-nowrap'>
+        <ul className='flex flex-row justify-start gap-5 '>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/search'>Search</Link></li>
+            <li><Link to='./about'>About</Link></li>
+        </ul>
+    </nav>
+    <Routes>
+    <Route index element={<Home/>} /> 
+    <Route path='/search' element={<Search />} />
+    <Route path='/about' element={<About />} />
+    <Route render={()=><h1>404: page not found</h1>} />
+    </Routes>
+     
+    </main>
+    </BrowserRouter>
+    </section>
+)
 }
 
-export default App;
+export default App
