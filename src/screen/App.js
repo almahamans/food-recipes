@@ -16,7 +16,7 @@ return(
         </ul>
     </nav>
     <Routes>
-    <Route exact path='/' element={<Home/>} /> 
+    <Route path='/' element={<Home/>} /> 
     <Route path='/search' element={<Search />} />
     <Route path='/about' element={<About />} />
     <Route render={()=><h1>404: page not found</h1>} />
