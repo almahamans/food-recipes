@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes, Link, NavLink} from 'react-router-dom';
+import {BrowserRouter, Route, Routes, Link, Redirect} from 'react-router-dom';
 import About from './About';
 import Search from './Search';
 import Home from './Home'
@@ -16,7 +16,11 @@ return(
         </ul>
     </nav>
     <Routes>
-    <Route path='/' element={<Home/>} /> 
+    {/* <Route path='/' element={<Home/>} />  */}
+    <Redirect exact from="/" to="/home" />
+        <Route path="/home">
+        <Home />
+    </Route>
     <Route path='/search' element={<Search />} />
     <Route path='/about' element={<About />} />
     <Route render={()=><h1>404: page not found</h1>} />
