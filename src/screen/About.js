@@ -1,6 +1,6 @@
 function About(){
     return(
-        <section className="flex flex-col justify-ecnetr items-center flex-wrap lg:mt-7 md:mt-9 sm:mt-9 sm:mx-5 font-sans text-[18px]">
+        <section className="flex flex-col justify-ecnetr items-center flex-wrap lg:mt-7 md:mt-9 sm:mt-9 sm:mx-5 xs:mx-5 xs:mt-9 font-sans text-[18px]">
             <h3 className=''>About the app:</h3>
             <p>the app aim to help chefs find different food recipes using <a href="http://https://www.edamam.com/terms/api/" className="underline text-red-800">Edamam API.</a></p>
             <h3>About app developer:</h3>

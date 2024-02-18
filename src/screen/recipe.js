@@ -12,7 +12,7 @@ return(
             ))}
         </ol>
         <p className='mb-2'><span className='text-red-800'>Calories:</span> {cal}</p>
-        <img src={img} alt="Food Image" className='contrast-100 hover:size-56 rounded lg:size-44 md:size-36 sm:size-36 mx-auto'/>
+        <img src={img} alt="Food Image" className='contrast-100 hover:size-56 rounded lg:size-44 md:size-36 sm:size-36 xs:size-36 mx-auto'/>
     </section>
 )
 }

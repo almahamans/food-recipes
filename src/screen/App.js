@@ -1,15 +1,15 @@
 import {BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import About from './About';
 import Search from './Search';
-import Home from './Home'
+import Home from './Home';
 
 function App(){
 return(
-    <section className='h-auto md:mb-[50%] sm:mb-[70%] lg:mb-[28%]'>
+    <section className='min-h-screen'>
     <BrowserRouter>
     <main>
-    <nav className='ml-9 my-5 font-bold text-md flex-nowrap'>
-        <ul className='flex flex-row justify-start gap-5 '>
+    <nav className='ml-9 my-5 font-bold text-md'>
+        <ul className='flex flex-row justify-start flex-nowrap gap-5'>
             <li><Link to='food-recipes/'>Home</Link></li>
             <li><Link to='/search'>Search</Link></li>
             <li><Link to='./about'>About</Link></li>
