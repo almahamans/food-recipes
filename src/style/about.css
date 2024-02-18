@@ -1,0 +1,7 @@
+section :where(h3){
+    font-weight: 600;
+}
+
+:has(section) p{
+    font-size: large;
+}

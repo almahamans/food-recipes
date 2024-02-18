@@ -1,5 +1,4 @@
-
-import '../style/App.css';
+import '../style/fonts.css';
 
 function Recipe({title, cal, img, ingredients}){
 return(

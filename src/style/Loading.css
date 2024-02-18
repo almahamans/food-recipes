@@ -1,7 +1,6 @@
 .loader-container {
     width: 30vw;
     height: 35vh;
-    /* margin: auto; */
     background: rgba(219, 219, 219, 0.834);
     border-radius: 20px;
     display: flex;
@@ -28,4 +27,21 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+@media (max-width: 439px) {
+    .loader-container{
+        width: 15vw;
+        height: 20vh;
+    }
+    .spinner{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+input::placeholder{
+    font-size: medium;
+    font-weight: 400;
+    font-style: italic;
 }
