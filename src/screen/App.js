@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes, Link, Redirect} from 'react-router-dom';
+import {BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import About from './About';
 import Search from './Search';
 import Home from './Home'
@@ -10,22 +10,18 @@ return(
     <main>
     <nav className='ml-9 my-5 font-bold text-md flex-nowrap'>
         <ul className='flex flex-row justify-start gap-5 '>
-            <li><Link to='/'>Home</Link></li>
+            <li><Link to='food-recipes/'>Home</Link></li>
             <li><Link to='/search'>Search</Link></li>
             <li><Link to='./about'>About</Link></li>
         </ul>
     </nav>
     <Routes>
-    {/* <Route path='/' element={<Home/>} />  */}
-    <Redirect exact from="/" to="/home" />
-        <Route path="/home">
-        <Home />
-    </Route>
+    <Route exact path='food-recipes/' element={<Home/>} /> 
     <Route path='/search' element={<Search />} />
     <Route path='/about' element={<About />} />
     <Route render={()=><h1>404: page not found</h1>} />
     </Routes>
-     
+    
     </main>
     </BrowserRouter>
     </section>
