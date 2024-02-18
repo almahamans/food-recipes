@@ -10,6 +10,6 @@ The application is easy to use and responsive to any screen size perfectly.
 + Tailwind Css: to give website style and make it screen responsive.
 + Css: to make waiting sgin animation while waiting.
 
-### App link
+### App link:
 [Food Recipes generater](https://almahamans.github.io/food-recipes/
 )
