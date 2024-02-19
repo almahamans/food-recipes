@@ -1,4 +1,4 @@
-import ToolsList from "../ui/ToolsList";
+import ToolsList from "./ToolsList";
 
 function Tools({name}){
     const tools_items = [
