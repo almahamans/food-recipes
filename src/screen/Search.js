@@ -1,6 +1,6 @@
 import '../style/fonts.css';
 import { useEffect, useState } from 'react';
-import Recipe from './recipe';
+import Recipe from './Recipe';
 import '../style/Loading.css'
 
 function Search() {
@@ -10,7 +10,6 @@ function Search() {
   const [recipes, setRecipes] = useState([])
   const [search, setSearch] = useState('')
   const [isLoading, setLoading] = useState(false)
-
 
 //edamam API
   useEffect(() => {
