@@ -1,4 +1,4 @@
-import '../style/fonts.css';
+import '../../style/fonts.css';
 
 function Recipe({title, cal, img, ingredients}){
 return(

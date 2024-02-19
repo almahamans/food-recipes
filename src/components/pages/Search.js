@@ -1,7 +1,7 @@
-import '../style/fonts.css';
+import '../../style/fonts.css';
 import { useEffect, useState } from 'react';
-import Recipe from './Recipe';
-import '../style/Loading.css'
+import Recipe from '../ui/Recipe';
+import '../../style/Loading.css'
 
 function Search() {
   const APP_ID = `4b719caf`; 

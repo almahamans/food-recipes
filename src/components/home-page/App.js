@@ -1,8 +1,8 @@
 import {BrowserRouter, Route, Routes, Link} from 'react-router-dom';
-import About from './About';
-import Search from './Search';
-import Home from './Home';
-import Tools from './Tools';
+import About from '../pages/About';
+import Search from '../pages/Search';
+import Home from '../pages/Home';
+import Tools from '../pages/Tools';
 
 function App(){
 return(
