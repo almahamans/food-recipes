@@ -1,0 +1,7 @@
+:is(section) .li{
+    text-transform: capitalize;
+    font-size: large;
+    list-style: square;
+    margin-left: 30px;
+    color: rgb(153 27 27);
+}
