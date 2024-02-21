@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/food-recipes/static/css/main.376fcd4f.css",
-    "main.js": "/food-recipes/static/js/main.f792bb5a.js",
+    "main.css": "/food-recipes/static/css/main.46c3933d.css",
+    "main.js": "/food-recipes/static/js/main.3465e0c8.js",
+    "static/media/chef-tools-names.jpg": "/food-recipes/static/media/chef-tools-names.e19662468c2449a9db09.jpg",
     "index.html": "/food-recipes/index.html",
-    "main.376fcd4f.css.map": "/food-recipes/static/css/main.376fcd4f.css.map",
-    "main.f792bb5a.js.map": "/food-recipes/static/js/main.f792bb5a.js.map"
+    "main.46c3933d.css.map": "/food-recipes/static/css/main.46c3933d.css.map",
+    "main.3465e0c8.js.map": "/food-recipes/static/js/main.3465e0c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.376fcd4f.css",
-    "static/js/main.f792bb5a.js"
+    "static/css/main.46c3933d.css",
+    "static/js/main.3465e0c8.js"
   ]
 }
