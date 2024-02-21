@@ -4,4 +4,10 @@ section :where(h3){
 
 :has(section) p{
     font-size: large;
+    margin-bottom: 15px;
+}
+
+.aboutLinks{
+    text-decoration: underline;
+    color: rgb(153 27 27);
 }

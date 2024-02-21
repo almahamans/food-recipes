@@ -9,14 +9,13 @@ return(
     <section className='min-h-screen'>
     <BrowserRouter>
     <main>
-    <nav className='ml-9 my-5 font-bold text-md'>
-        <ul className='flex flex-row justify-start flex-nowrap gap-5'>
-            <li><Link to='food-recipes/'>Home</Link></li>
-            <li><Link to='/search'>Search</Link></li>
-            <li><Link to='/tools'>Tools</Link></li>
-            <li><Link to='/about'>About</Link></li>
-        </ul>
-    </nav>
+    <header className='ml-9 my-5 font-bold text-md flex flex-row justify-start flex-nowrap gap-5'>
+            <span><Link to='food-recipes/'>Home</Link></span>
+            <span><Link to='/search'>Search</Link></span>
+            <span><Link to='/tools'>Tools</Link></span>
+            <span><Link to='/about'>About</Link></span>
+    </header>
+
     <Routes>
     <Route exact path='food-recipes/' element={<Home name='chef' />} /> 
     <Route path='/search' element={<Search />} />
@@ -24,7 +23,6 @@ return(
     <Route path='/about' element={<About />} />
     <Route render={()=><h1>404: page not found</h1>} />
     </Routes>
-    
     </main>
     </BrowserRouter>
     </section>

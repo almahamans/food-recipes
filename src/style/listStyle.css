@@ -1,4 +1,4 @@
-:is(section) .li{
+:is(section) li{
     text-transform: capitalize;
     font-size: large;
     list-style: square;

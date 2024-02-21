@@ -12,6 +12,7 @@ function Home(props){
             </svg>
             </section>
             <p>Here is an app to help you with cooking!</p>
+            <p></p>
             <p>Learn <Link to='/about' className='font-semibold underline text-red-800'>about</Link> the app.</p>
         </section>
     )
