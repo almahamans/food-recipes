@@ -9,5 +9,6 @@ The application is easy to use and responsive to any screen size perfectly.
 + [Edamam API](https://developer.edamam.com/edamam-docs-recipe-api): used to git the recipes data.
 + Tailwind Css: to give website style and make it screen responsive.
 + Css: to make waiting sgin animation while waiting.
-
+### Live Link:
+[App](https://almahamans.github.io/food-recipes/)
 
