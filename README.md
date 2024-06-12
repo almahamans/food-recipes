@@ -12,3 +12,6 @@ The application is easy to use and responsive to any screen size perfectly.
 ### Live Link:
 [App](https://almahamans.github.io/food-recipes/)
 
+### App video:
+https://github.com/almahamans/food-recipes/assets/43613434/fe4809ae-d52b-408a-9e3c-e3ba1e5c7afe
+
